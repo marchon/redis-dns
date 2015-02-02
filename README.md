@@ -30,6 +30,7 @@ curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>&myip=<IP>
 or 
 ```
 curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>
-``` to use remote_addr as the default address.
+```
+to use remote_addr as the default address.
 
 For an example systemd service file see redis-dns.service.
