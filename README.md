@@ -33,4 +33,9 @@ curl -s '<username>:<password>@<host>:<port>/update?hostname=<hostname>'
 ```
 to use remote_addr as the default address.
 
+To see the personal resolve info invoke:
+```
+curl -s '<username>:<password>@<host>:<port>/info'
+```
+
 For an example systemd service file see redis-dns.service.
