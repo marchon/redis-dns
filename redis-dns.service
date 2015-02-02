@@ -3,7 +3,7 @@ Description=redis-dns DNS server
 After=local-fs.target network.target
 
 [Service]
-ExecStart=<redis-dns>/redis-dns/redis-dns run -b 
+ExecStart=/usr/lib/redis-dns/redis-dns run -b 
 PIDFile=/var/run/redis-dns/dns.pid
 Type=forking
 

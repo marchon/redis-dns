@@ -21,11 +21,6 @@ import datetime
 from gredis import get_redis
 import records
 
-"""
-Usage:
-# curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>
-# curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>&myip=<IP>
-"""
 # TODO: Cleanup logging, add a handler and create an option for a logfile.
 class Missing_Zone(Exception):
     pass # END Class Missing_Zone
