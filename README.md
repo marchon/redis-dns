@@ -25,11 +25,11 @@ To start invoke:
 
 To update the resolve address of subdomain invoke:
 ```
-curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>&myip=<IP>
+curl -s '<username>:<password>@<host>:<port>/update?hostname=<hostname>&myip=<IP>'
 ```
 or 
 ```
-curl -s <username>:<password>@<host>:<port>/update?hostname=<hostname>
+curl -s '<username>:<password>@<host>:<port>/update?hostname=<hostname>'
 ```
 to use remote_addr as the default address.
 
