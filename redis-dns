@@ -187,9 +187,7 @@ if __name__ == '__main__':
         user_info = pwd.getpwnam(args.as_user)
         uid = user_info.pw_uid
         gid = user_info.pw_gid
-        os.seteuid(uid)
-        os.setegid(gid)
-
+        # Todo: RUN AS USER FUNCTION
         if args.background:
             gevent.reinit()
             serve(dns_socket, port=args.port)
