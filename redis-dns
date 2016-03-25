@@ -130,7 +130,7 @@ def web_service_handler(env, start_response):
             if not valid_auth(username, password, hostname):
                 return bad_auth()
             # Default to the request IP if this param is not present.
-            ip = args['myip'].pop() if 'myip' in arg else env.get('REMOTE_ADDR', '127.0.0.1')
+            ip = args['myip'].pop() if 'myip' in args else env.get('REMOTE_ADDR', '127.0.0.1')
             get_redis().hmset('NODE:%s' % hostname, {'A': ip, 'UPDATED': datetime.datetime.utcnow().isoformat() + 'Z'})
             logging.info('Set %s to %s' % (hostname, ip))
         except KeyError as e:
